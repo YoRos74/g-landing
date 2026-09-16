@@ -283,6 +283,13 @@ button,
   flex-shrink: 0;
 }
 
+.hero-proof-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
 .proof-item {
   display: flex;
   align-items: center;
@@ -2051,14 +2058,36 @@ button,
 
   .hero-proof {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 8px;
     width: 100%;
-    max-width: 280px;
+    max-width: 100%;
   }
 
-  .proof-sep {
+  .hero-proof-row {
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .hero-proof .proof-sep {
+    display: block;
+    background: #ffffff4d;
+  }
+
+  .hero-proof .proof-sep-break,
+  .proof-sep-break {
     display: none;
+  }
+
+  .proof-item-support {
+    justify-content: center;
+  }
+
+  .hero-proof .proof-text {
+    font-size: 12px;
+    line-height: 16px;
   }
 
   .hero-iphone {
