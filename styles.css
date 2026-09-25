@@ -49,7 +49,7 @@ button,
 .page {
   position: relative;
   width: 1440px;
-  height: 7600px;
+  height: 7900px;
   margin: 0 auto;
   overflow: visible;
   background: #ffffff;
@@ -1348,20 +1348,34 @@ button,
 
 .disclaimer {
   position: absolute;
-  left: 150px;
-  top: 5920px;
-  width: 1140px;
+  left: 0;
+  top: 5960px;
+  width: 1440px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
+  box-sizing: border-box;
+  padding: 64px 150px 72px;
+  background: #12143a;
+}
+
+.disclaimer-label {
+  color: #ffffff;
+  font-family: "Inter Tight", system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .disclaimer p {
-  color: #00000099;
+  max-width: 980px;
+  color: #b7bdd4;
   font-family: Inter, system-ui, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: -0.01em;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 .btn-outline {
@@ -1803,9 +1817,9 @@ button,
     left: auto;
     top: auto;
     width: 100%;
-    max-width: 1120px;
-    margin: 48px auto 0;
-    padding: 0 24px 64px;
+    max-width: none;
+    margin: 96px 0 0;
+    padding: 56px 24px 64px;
   }
 
   .chiffres-title,
@@ -2143,13 +2157,8 @@ button,
   }
 
   .disclaimer {
-    position: relative;
-    left: auto;
-    top: auto;
-    width: 100%;
-    max-width: 1120px;
-    margin: 40px auto 0;
-    padding: 0 18px calc(40px + env(safe-area-inset-bottom));
+    margin-top: 80px;
+    padding: 48px 18px calc(48px + env(safe-area-inset-bottom));
   }
 
   .display-54 {
